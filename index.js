@@ -203,13 +203,13 @@ function onError(e){
 
 io.on('connection', function (socket) {
 	//连接成功后, 用户登陆
-	socket.on('login', addUser.bind(socket));
+	socket.on('login', addUser);
 
 	//连接断开
-	socket.on('disconnect', removeUser.bind(socket));
+	socket.on('disconnect', removeUser);
 
 	//收到客户发来的消息
-	socket.on('new message', onMessage.bind(socket));
+	socket.on('new message', onMessage);
 
-	socket.on('error', onError.bind(socket));
+	socket.on('error', onError);
 });
