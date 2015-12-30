@@ -1,0 +1,88 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  overflow:hidden;
+  font-size: 12px;
+}
+
+h1{text-align:center;}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+.page{
+	position:relative;
+	width: 500px;
+	height: 500px;
+	margin: 10px auto; 
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.log {
+  color: gray;
+  font-size: 40%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  overflow-y: auto;
+}
+
+.message{padding: 2px;}
+
+.username{margin-right: 6px;}
+
+.messageBody{padding-left: 10px;margin: 2px;}
+
+/* Input */
+
+.inputMessage {
+  border: 1px solid #ccc;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Socket.IO 客服系统 Demo For SegmentFault QA</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>普通用户的界面</h1>
+	<div class="page">
+		<div class="chatArea"><ul id="messages" class="messages"></ul></div>
+		<form>
+			<input id="inputMessage" class="inputMessage" placeholder="Type here..."/>
+			<input type="submit" style="display:none;">
+		</form>
+	</div>
+
+	<script src="jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
